@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --amarillo-porsche: #E2B55A;
+    --rojo-porsche: #B12B28;
+}
+
+.fondo-negro {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.navbar {
+	background-color: var(--rojo-porsche);
+	border-bottom: solid 3px black;
+}
+
+.nav {
+    padding: .5%;
+    background-color: var(--amarillo-porsche);
+    border-bottom: 3px solid black;
+}
+
+.nav-item {
+    margin: 0 1%;
+}
+
+.nav-item:hover {
+    color: var(--rojo-porsche);
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contenido-principal {
+    margin-top: 2%;
+    margin-left: auto;
+}
+
+.contenido-principal__texto {
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.contenido-principal__descripcion {
+    margin-top: 3%;
+    margin-right: 5%;
+	font-weight: bold;
+}
+
+.texto {
+    margin-top: 2%;
+}
+
+h1, h2 {
+    font-family: 'Porsche Next TT';
+}
+
+.texto {
+	font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+    gap: 3%;
+    padding-bottom: 2%;
+}
+
+.foto {
+    border: solid 3px black;
+}
+
+.redes {
+    margin: 2% 0;
+}
+
+.icon-link {
+    font-size: 20px;
+	color: white;
+}
+
+.icon-link:hover {
+    color: var(--rojo-porsche);
+}
+
+.video-fondo {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.mis-conocimientos {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.imagen {
+    margin: 0 2%;
+}
+
+/*MEDIA QUERY TABLET MIN*/
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*MEDIA QUERY TABLET MAX*/
+
+@media (max-width: 768px) {
+    .foto {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 2%;
+    }
+
+    .mis-conocimientos {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/*MEDIA QUERY TELÉFONO*/
+
+@media (max-width: 480px) {
+    .contenido-principal, .texto {
+        text-align: center;
+    }
+
+    .foto {
+        width: 85%;
+        align-items: center;
+    }
+
+    .mis-conocimientos {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.proyectos {
+    text-align: center;
+    margin-top: 5%;
+}
