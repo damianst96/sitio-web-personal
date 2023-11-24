@@ -98,8 +98,7 @@ h1, h2 {
     position: absolute;
     z-index: -1;
     opacity: 0.3;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
 .mis-conocimientos {
